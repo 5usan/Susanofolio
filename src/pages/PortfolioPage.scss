@@ -1,0 +1,19 @@
+$textColor: white;
+$mobiletextSize: 2rem;
+$textSize: 3rem;
+
+@import "../styles/mixin.scss";
+
+.wrapper {
+  color: $textColor;
+  h4 {
+    font-size: $mobiletextSize;
+    @include notMobile() {
+      font-size: $textSize;
+    }
+  }
+  .portfolio {
+    font-weight: bold;
+    margin-left: 12px;
+  }
+}

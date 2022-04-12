@@ -1,4 +1,4 @@
-$navHeight: 6vh;
+$navHeight: 8vh;
 $mobileWidth: 478px;
 $navlinkSize: 1rem;
 $navlinkColor: white;
@@ -10,11 +10,15 @@ $navbarBackground: white;
     @content;
   }
 }
-.rootNav {
+.rootNavHome {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.rootNav {
+  background-color: rgb(34, 34, 34);
 }
 
 li {

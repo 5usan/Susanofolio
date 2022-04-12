@@ -1,0 +1,18 @@
+$backgroundColor: rgb(34, 34, 34);
+
+@import "../styles/mixin.scss";
+
+.back {
+  background-color: $backgroundColor;
+  height: 100%;
+
+  @include notMobile {
+    min-height: 100vh;
+  }
+}
+
+.contain {
+  width: 100%;
+  // margin: 0 5%;
+  min-height: inherit;
+}
