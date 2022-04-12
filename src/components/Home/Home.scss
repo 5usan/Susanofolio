@@ -1,0 +1,45 @@
+$infoColor: white;
+$aboveNameSize: 4rem;
+$name: 5rem;
+$belowName: 1rem;
+
+.background {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.profile {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.myDetails {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: inherit;
+  color: $infoColor;
+  text-align: center;
+}
+
+h2 {
+  font-size: $aboveNameSize;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: $name;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: $belowName;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}

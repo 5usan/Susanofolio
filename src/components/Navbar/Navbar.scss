@@ -1,0 +1,53 @@
+$navHeight: 6vh;
+$mobileWidth: 478px;
+$navlinkSize: 1rem;
+$navlinkColor: white;
+$navlinkColorMobile: black;
+$navbarBackground: white;
+
+@mixin notMobile {
+  @media (min-width: #{$mobileWidth}) {
+    @content;
+  }
+}
+.rootNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: $navlinkSize;
+}
+
+ul {
+  margin: 5px;
+  padding: 0px;
+  @include notMobile() {
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+}
+
+.menuIcon {
+  margin: 5px 0 0 5px;
+}
+
+.navbar {
+  min-height: $navHeight;
+  background-color: $navbarBackground;
+  @include notMobile() {
+    background-color: transparent;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $navlinkColorMobile;
+  letter-spacing: 3px;
+  @include notMobile() {
+    color: $navlinkColor;
+  }
+}
