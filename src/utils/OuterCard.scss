@@ -4,10 +4,10 @@ $backgroundColor: rgb(34, 34, 34);
 
 .back {
   background-color: $backgroundColor;
-  height: 100%;
 
   @include notMobile {
-    min-height: 100vh;
+    min-height: 92vh;
+    margin-top: 8vh;
   }
 }
 

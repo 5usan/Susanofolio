@@ -20,8 +20,9 @@ const Navbar = () => {
       {width < mobileView && (
         <div className={`${showNavbar && "bg-white"}`}>
           <TiThMenu
-            className="border p-1 px-0 rounded menuIcon "
+            className="border p-1 px-0 rounded menuIcon mb-2"
             size={40}
+            color="gray"
             onClick={displayNavbar}
           />
         </div>

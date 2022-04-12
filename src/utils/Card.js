@@ -10,7 +10,7 @@ const Card = (props) => {
     <div
       className={`col-lg-2 d-flex flex-column wrappers ${props.className} m-3 p-0`}
     >
-      <img src={img} alt="" className="w-100 m-0 p-0" />
+      <img src={img} alt="" className="w-100 m-0 p-0 projectImg" />
       <div className="d-flex flex-column p-4">
         <h3>{name}</h3>
         <p>{description}</p>

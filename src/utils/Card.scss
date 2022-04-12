@@ -3,13 +3,16 @@ $shadow1: rgba(255, 255, 255, 0.2);
 $shadow2: rgba(254, 254, 254, 0.19);
 
 .wrappers {
-  min-height: 500px;
-  min-width: 350px;
+  height: 500px;
+  width: 350px;
   background-color: $cardBackground;
 }
 
 .wrappers:hover {
-  box-shadow: 0 4px 8px 0 $shadow1,
-    0 6px 20px 0 $shadow2;
+  box-shadow: 0 4px 8px 0 $shadow1, 10px 0 20px 0 $shadow2;
 }
 
+.projectImg {
+  object-fit: cover;
+  height: 240px;
+}
