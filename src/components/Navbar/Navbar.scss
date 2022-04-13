@@ -5,17 +5,14 @@ $navlinkColor: white;
 $navlinkColorMobile: black;
 $navbarBackground: white;
 
-@mixin notMobile {
-  @media (min-width: #{$mobileWidth}) {
-    @content;
-  }
-}
+@import "../../styles/mixin.scss";
+
 .rootNavHome {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-}
+} 
 
 .rootNav {
   position: fixed;
