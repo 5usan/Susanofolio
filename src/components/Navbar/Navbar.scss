@@ -12,7 +12,8 @@ $navbarBackground: white;
   top: 0;
   left: 0;
   width: 100%;
-} 
+  z-index: 999;
+}
 
 .rootNav {
   position: fixed;
@@ -20,6 +21,7 @@ $navbarBackground: white;
   left: 0;
   width: 100%;
   background-color: rgb(34, 34, 34);
+  z-index: 999;
 }
 
 li {

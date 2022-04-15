@@ -1,5 +1,6 @@
 import React from "react";
 import { Formik } from "formik";
+import "./FormikContainer.scss";
 const FormikContainer = (props) => {
   return (
     <div className="w-100">

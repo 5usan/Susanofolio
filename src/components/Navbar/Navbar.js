@@ -16,7 +16,7 @@ const Navbar = () => {
   console.log(location.pathname, "location");
 
   return (
-    <div className={location.pathname === "/home" ? "rootNavHome": "rootNav"}>
+    <div className={location.pathname === "/home" ? "rootNavHome" : "rootNav"}>
       {width < mobileView && (
         <div className={`${showNavbar && "bg-white"}`}>
           <TiThMenu

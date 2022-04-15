@@ -1,0 +1,14 @@
+$btnPadding: 15px 10px;
+$btnRadius: 20px;
+$btnBackground: rgb(186, 201, 100);
+$btnTextColor: white;
+
+.generalBtn {
+  padding: $btnPadding;
+  border-radius: $btnRadius;
+  background-color: $btnBackground;
+  border: none;
+  color: $btnTextColor;
+  font-size: 0.9rem;
+  width: 100px;
+}

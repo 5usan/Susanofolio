@@ -4,7 +4,7 @@ import OuterCard from "../components/OuterCard/OuterCard";
 
 const ContactPage = () => {
   return (
-    <OuterCard first="Get" second="In Touch">
+    <OuterCard first="Get In" second="Touch">
       <Contact />
     </OuterCard>
   );
