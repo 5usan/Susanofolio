@@ -1,9 +1,9 @@
 // import { Button } from "@material-ui/core";
 // import axios from "axios";
 // import React, { useEffect, useState } from "react";
-import Card from "../../utils/Card";
+import ProjectCard from "./ProjectCard";
+import projectsInfo from "../../constants/projects.json";
 import "./Portfolio.scss";
-import projectsInfo from "../../assets/projects.json";
 
 const Portfolio = () => {
   // const userGitLink = "https://api.github.com/users/5usan/repos?per_pages=6";
@@ -24,7 +24,7 @@ const Portfolio = () => {
     <div className="row justify-content-center align-items-center">
       {projectsInfo.map((data, index) => {
         return (
-          <Card
+          <ProjectCard
             key={index}
             className=""
             img={data.image}

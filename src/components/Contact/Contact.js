@@ -1,13 +1,12 @@
-import { Paper } from "@material-ui/core";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
-import userInfo from "../../assets/user-info.json";
-import "./Contact.scss";
+import userInfo from "../../constants/user-info.json";
 import ContactForm from "./ContactForm";
+import "./Contact.scss";
 
 const Contact = () => {
   return (

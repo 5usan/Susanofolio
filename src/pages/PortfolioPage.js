@@ -1,6 +1,6 @@
 import React from "react";
 import Portfolio from "../components/Portfolio/Portfolio";
-import OuterCard from "../utils/OuterCard";
+import OuterCard from "../components/OuterCard/OuterCard";
 
 const PortfolioPage = () => {
   return (

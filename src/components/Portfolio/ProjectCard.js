@@ -1,8 +1,8 @@
-import { Paper } from "@material-ui/core";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 
-import "./Card.scss";
+import "./ProjectCard.scss";
+
 const Card = (props) => {
   const { name, img, description, github } = props;
   console.log(description);

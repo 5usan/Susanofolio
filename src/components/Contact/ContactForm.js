@@ -1,8 +1,8 @@
+import React from "react";
 import { Button } from "@material-ui/core";
 import { Form } from "formik";
-import React from "react";
-import FormikContainer from "../../utils/Form/Formik/FormikContainer";
-import FormikControls from "../../utils/Form/Formik/FormikControls";
+import FormikContainer from "../Form/Formik/FormikContainer";
+import FormikControls from "../Form/Formik/FormikControls";
 
 const ContactForm = () => {
   const initialValues = {

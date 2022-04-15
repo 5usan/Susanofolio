@@ -1,5 +1,5 @@
 import React from "react";
-import userInfo from "../../assets/user-info.json";
+import userInfo from "../../constants/user-info.json";
 import "./Home.scss";
 
 const Home = () => {
@@ -14,5 +14,5 @@ const Home = () => {
     </div>
   );
 };
-
+ 
 export default Home;

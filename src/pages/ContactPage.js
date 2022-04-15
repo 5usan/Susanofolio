@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "../components/Contact/Contact";
-import OuterCard from "../utils/OuterCard";
+import OuterCard from "../components/OuterCard/OuterCard";
 
 const ContactPage = () => {
   return (

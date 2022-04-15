@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Navbar.scss";
 import { TiThMenu } from "react-icons/ti";
 import { NavLink, useLocation } from "react-router-dom";
 import useWindowDimensions from "../../utils/useWindowsDimensions";
+import "./Navbar.scss";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
