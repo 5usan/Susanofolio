@@ -11,9 +11,8 @@ const useStyles = makeStyles({
 });
 
 const Input = (props) => {
-  const { name, type, className, rows, errorMessage, ...rest } = props;
+  const { name, type, className, rows, ...rest } = props;
   const classes = useStyles();
-  console.log(errorMessage, "errorMessage");
   const [field, mata] = useField(name);
   let config;
   if (type === "date") {
@@ -46,10 +45,10 @@ const Input = (props) => {
     };
   }
 
-  // if (mata.touched && mata.error) {
-  //   config.error = true;
-  //   config.helperText = mata.error;
-  // }
+  if (mata.touched && mata.error) {
+    config.error = true;
+    config.helperText = mata.error;
+  }
 
   return (
     <div className={`${className}`}>
@@ -61,7 +60,6 @@ const Input = (props) => {
         }}
         inputProps={{ className: classes.input }}
       />
-      {errorMessage && <p className="text-danger">{errorMessage}</p>}
     </div>
   );
 };

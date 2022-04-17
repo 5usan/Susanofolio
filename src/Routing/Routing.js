@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Homepage from "../../pages/Homepage";
-import PortfolioPage from "../../pages/PortfolioPage";
-import ContactPage from "../../pages/ContactPage";
-import AboutPage from "../../pages/AboutPage";
-import ResumePage from "../../pages/ResumePage";
+import Homepage from "../pages/Homepage";
+import PortfolioPage from "../pages/PortfolioPage";
+import ContactPage from "../pages/ContactPage";
+import AboutPage from "../pages/AboutPage";
+import ResumePage from "../pages/ResumePage";
 
 function Routing() {
   return (
