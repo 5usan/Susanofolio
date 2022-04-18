@@ -12,7 +12,6 @@ const ContactForm = () => {
     email: "",
     description: "",
   };
-
   const submitHandler = (values, onSubmitProps) => {
     console.log(console.log(values, "contact form datas"));
 
