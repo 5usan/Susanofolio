@@ -1,0 +1,37 @@
+$detailsTextColor: white;
+$linkColor: rgb(37, 92, 148);
+$usernameColor: rgb(122, 122, 122);
+
+@import "../../styles/mixin.scss";
+
+.contact {
+  color: $detailsTextColor;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  overflow: hidden;
+  h3 {
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+  @include notMobile() {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  a,
+  a:visited,
+  a:active,
+  a:hover {
+    text-decoration: none;
+    color: $detailsTextColor;
+  }
+  h6 {
+    color: $linkColor;
+  }
+
+  p {
+    color: $usernameColor;
+  }
+}

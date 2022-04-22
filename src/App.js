@@ -1,12 +1,8 @@
+import Routing from "./Routing/Routing";
 import "./App.scss";
-import Routing from "./components/Routing";
 
 const App = () => {
-  return (
-    <div>
-      <Routing />
-    </div>
-  );
+  return <Routing />;
 };
 
 export default App;

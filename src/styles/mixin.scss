@@ -1,0 +1,7 @@
+$mobileWidth: 478px; 
+
+@mixin notMobile {
+  @media (min-width: #{$mobileWidth}) {
+    @content;
+  }
+}

@@ -1,0 +1,18 @@
+$aboutTextColor: white;
+$specificParaColor: rgb(122, 122, 122);
+$specificFontSize: 0.9rem;
+
+.about {
+  color: $aboutTextColor;
+  letter-spacing: 1px;
+}
+
+.aboutImg {
+  object-fit: cover;
+}
+
+.oddPara {
+  letter-spacing: 2px;
+  font-size: $specificFontSize;
+  color: $specificParaColor;
+}
