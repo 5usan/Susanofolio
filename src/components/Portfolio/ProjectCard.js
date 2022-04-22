@@ -5,7 +5,6 @@ import "./ProjectCard.scss";
 
 const Card = (props) => {
   const { name, img, description, github } = props;
-  console.log(description);
   return (
     <div
       className={`col-lg-2 d-flex flex-column wrappers ${props.className} m-3 p-0`}
