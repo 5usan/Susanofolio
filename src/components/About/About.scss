@@ -1,6 +1,7 @@
 $aboutTextColor: white;
 $specificParaColor: rgb(122, 122, 122);
 $specificFontSize: 0.9rem;
+$firstFontSize: 1rem;
 
 .about {
   color: $aboutTextColor;
@@ -11,8 +12,15 @@ $specificFontSize: 0.9rem;
   object-fit: cover;
 }
 
-.oddPara {
+.firstPara {
+  font-size: $firstFontSize;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+.restPara {
   letter-spacing: 2px;
   font-size: $specificFontSize;
   color: $specificParaColor;
+  text-align: justify;
 }
