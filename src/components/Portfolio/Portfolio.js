@@ -11,7 +11,7 @@ const Portfolio = () => {
   const sendGetRequest = async () => {
     try {
       const resp = await axios.get(userGitLink);
-      setRepoInfo(resp.data);
+      setRepoInfo(resp.data.allRepos);
     } catch (err) {
       console.error(err, "error");
     }
@@ -20,22 +20,21 @@ const Portfolio = () => {
     sendGetRequest();
   }, []);
 
-  console.log(repoInfo, "repoInfo");
-
   return (
     <div className="row justify-content-center align-items-center">
-      {repoInfo && repoInfo.allRepos.map((data, index) => {
-        return (
-          <ProjectCard
-            key={index}
-            className=""
-            img={data.image}
-            name={data.name}
-            description={data.description}
-            github={data.link}
-          />
-        );
-      })}
+      {repoInfo &&
+        repoInfo.map((data, index) => {
+          return (
+            <ProjectCard
+              key={index}
+              className=""
+              img={data.image}
+              name={data.name}
+              description={data.description}
+              github={data.link}
+            />
+          );
+        })}
     </div>
   );
 };
