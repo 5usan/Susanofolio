@@ -21,7 +21,7 @@ const Portfolio = () => {
 
   return (
     <div className="row justify-content-center align-items-center">
-      {repoInfo &&
+      {repoInfo ? (
         repoInfo.map((data, index) => {
           return (
             <ProjectCard
@@ -35,7 +35,10 @@ const Portfolio = () => {
               github={data.link}
             />
           );
-        })}
+        })
+      ) : (
+        <h className="text-white text-center">LOADING...</h>
+      )}
     </div>
   );
 };
