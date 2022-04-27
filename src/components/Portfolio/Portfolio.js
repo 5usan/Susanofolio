@@ -3,7 +3,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import projectsInfo from "../../constants/projects.json";
-import "./Portfolio.scss";
 
 const Portfolio = () => {
   const userGitLink = "http://localhost:5000/api/portfolio/";

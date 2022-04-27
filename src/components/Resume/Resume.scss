@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+@import "../../styles/mixin.scss";
+
+.wrapper{
+    color: $text--color;
+    margin: 0 5%;
+    width: 90%;
+}

@@ -25,21 +25,19 @@ $belowName: 1rem;
   width: inherit;
   color: $infoColor;
   text-align: center;
-}
+  h2 {
+    font-size: $aboveNameSize;
+    letter-spacing: 3px;
+  }
+  h1 {
+    font-size: $name;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
 
-h2 {
-  font-size: $aboveNameSize;
-  letter-spacing: 3px;
-}
-
-h1 {
-  font-size: $name;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-h4 {
-  font-size: $belowName;
-  letter-spacing: 5px;
-  font-weight: lighter;
+  h4 {
+    font-size: $belowName;
+    letter-spacing: 5px;
+    font-weight: lighter;
+  }
 }
