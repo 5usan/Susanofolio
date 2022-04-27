@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+$edu--name--color : #ADAF46;
+$edu--desc--color: #858070;
+
+.resumeWrapper{
+    border-radius: 8px;
+    min-height: 300px;
+    width: 100%;
+    background-color: $resume--cart--bgcolor;
+    // width:400px;
+    padding: 15px;
+    letter-spacing: 0.08rem;
+    margin: 5px 0;
+    text-align: justify;
+
+    h4{
+        color: $edu--name--color;
+    }
+}
+
+.darkColor{
+    color: $edu--desc--color;
+}

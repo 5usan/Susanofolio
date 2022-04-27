@@ -1,0 +1,52 @@
+{
+  "education": [
+    {
+      "name": "B.Sc. CSIT",
+      "completionData": "Present",
+      "instituteName": "Vedas College, Tribhuwan University",
+      "description": "Bachelors of Science in Computer Science and Information Technology (B.Sc. CSIT) is a four year course affiliated to Tribhuvan University designed to provide the students with all sorts of knowledge in the field of Information Technology and Computing."
+    },
+
+    {
+      "name": "+2 in Science",
+      "completionData": "2017",
+      "instituteName": "Nepalaya College",
+      "description": "+2 in Science offers an integrated package in Physics, Chemistry, Biology and Mathematics. The program aims to equip students with a level fit for further studies in technology, medicine, engineering and biotechnology."
+    },
+
+    {
+      "name": "School Leaving Certificate",
+      "completionData": "2015",
+      "instituteName": "Bright Angels English Boarding School",
+      "description": "The School Leaving Certificate (shortly known as SLC and known in Nepali as prabeshika parikshha) is a nationally administered and monitored high-school-matriculation examination in Nepal."
+    }
+  ],
+
+  "skills": [
+    {
+      "technicalSkills": [
+        "HTML5",
+        "CSS",
+        "Bootstarp",
+        "Javascript",
+        "React js",
+        "Node js"
+      ]
+    }
+  ],
+
+  "workExperience": [
+    {
+      "name": "Data Entry Specialist",
+      "expreienceData": "2019-2022",
+      "instituteName": "Cloudfactory",
+      "description": "Data entry specialists are responsible for digitizing data for storage purposes. They work in the administrative department of a company and their duties include collecting client information, maintaining an organized filing system, and reviewing data for completeness and accuracy."
+    },
+    {
+      "name": "Software Engineering Trainee",
+      "expreienceData": "2022-Present",
+      "instituteName": "Optimum Futurist",
+      "description": "Software engineers apply principles and techniques of engineering, mathematics, and computer science to the design, development, and testing of software applications for computers."
+    }
+  ]
+}
