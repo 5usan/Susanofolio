@@ -27,7 +27,9 @@ const Portfolio = () => {
             <ProjectCard
               key={index}
               className=""
-              img={data.image}
+              img={
+                index % 2 === 0 ? projectsInfo[0].image : projectsInfo[1].image
+              }
               name={data.name}
               description={data.description}
               github={data.link}
