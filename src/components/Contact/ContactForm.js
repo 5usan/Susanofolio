@@ -4,8 +4,10 @@ import FormikContainer from "../Form/Formik/FormikContainer";
 import FormikControls from "../Form/Formik/FormikControls";
 import Button from "../Button/Button";
 import { ValidationContactFormSchema } from "../Form/FormValidation/ValidationSchema";
+import axios from "axios";
 
 const ContactForm = () => {
+  const contactLink = "http://localhost:5000/api/contact/";
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -14,7 +16,15 @@ const ContactForm = () => {
   };
   const submitHandler = (values, onSubmitProps) => {
     console.log(console.log(values, "contact form datas"));
-
+    const sentContactInfo = async () => {
+      try {
+        const resp = await axios.post(contactLink, values);
+        console.log(resp);
+      } catch (err) {
+        console.log(err, "error");
+      }
+    };
+    sentContactInfo();
     // onSubmitProps.resetForm();
   };
   return (
