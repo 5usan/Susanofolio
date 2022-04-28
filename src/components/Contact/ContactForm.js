@@ -8,6 +8,7 @@ import axios from "axios";
 
 const ContactForm = () => {
   const contactLink = "http://localhost:5000/api/contact/";
+  const [notification, setNotification] = useState(false);
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -16,17 +17,21 @@ const ContactForm = () => {
   };
   const submitHandler = (values, onSubmitProps) => {
     console.log(console.log(values, "contact form datas"));
+    setNotification(true);
     const sentContactInfo = async () => {
       try {
         const resp = await axios.post(contactLink, values);
         console.log(resp);
+        setNotification(false);
       } catch (err) {
         console.log(err, "error");
       }
     };
+
     sentContactInfo();
-    // onSubmitProps.resetForm();
+    onSubmitProps.resetForm();
   };
+  console.log(notification, "noti");
   return (
     <FormikContainer
       initialValues={initialValues}
@@ -69,7 +74,9 @@ const ContactForm = () => {
               CLEAR
             </Button>
           </div>
-          <div className="d-flex justify-content-start mt-3 col-lg-8"></div>
+          <div className="d-flex justify-content-start mt-3 col-lg-8">
+            {notification && <p>Sending...</p>}
+          </div>
         </div>
       </Form>
     </FormikContainer>
