@@ -1,7 +1,4 @@
-$infoColor: white;
-$aboveNameSize: 4rem;
-$name: 5rem;
-$belowName: 1rem;
+@import "../../styles/variables";
 
 .background {
   height: 100vh;
@@ -23,20 +20,20 @@ $belowName: 1rem;
   top: 0;
   height: inherit;
   width: inherit;
-  color: $infoColor;
+  color: $text--color;
   text-align: center;
   h2 {
-    font-size: $aboveNameSize;
+    font-size: $above--name--size;
     letter-spacing: 3px;
   }
   h1 {
-    font-size: $name;
+    font-size: $name--size;
     letter-spacing: 2px;
     font-weight: bold;
   }
 
   h4 {
-    font-size: $belowName;
+    font-size: $below--name;
     letter-spacing: 5px;
     font-weight: lighter;
   }

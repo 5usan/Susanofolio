@@ -1,11 +1,9 @@
-$cardBackground: rgba(255, 255, 255);
-$shadow1: rgba(255, 255, 255, 0.2);
-$shadow2: rgba(254, 254, 254, 0.19);
+@import "../../styles/variables";
 
 .wrappers {
   height: 500px;
   width: 350px;
-  background-color: $cardBackground;
+  background-color: $card--background;
 }
 
 .wrappers:hover {

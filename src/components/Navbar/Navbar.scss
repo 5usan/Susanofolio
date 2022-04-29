@@ -1,11 +1,9 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables";
+
 $navHeight: 8vh;
 $mobileWidth: 478px;
 $navlinkSize: 1rem;
-$navlinkColor: white;
-$navlinkColorMobile: black;
-$navbarBackground: white;
-
-@import "../../styles/mixin.scss";
 
 .rootNavHome {
   position: fixed;
@@ -20,7 +18,7 @@ $navbarBackground: white;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(34, 34, 34);
+  background-color: $background--color;
   z-index: 999;
 }
 
@@ -44,7 +42,7 @@ ul {
 
 .navbar {
   min-height: $navHeight;
-  background-color: $navbarBackground;
+  background-color: $navbar--bg--mobile;
   @include notMobile() {
     background-color: transparent;
   }
@@ -52,9 +50,9 @@ ul {
 
 .link {
   text-decoration: none;
-  color: $navlinkColorMobile;
+  color: $navbar--text--color--mobile;
   letter-spacing: 3px;
   @include notMobile() {
-    color: $navlinkColor;
+    color: $text--color;
   }
 }

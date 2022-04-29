@@ -10,7 +10,7 @@ import "./Contact.scss";
 
 const Contact = () => {
   return (
-    <div className="row w-100 contact">
+    <div className="row contact">
       <div className="col-lg-8 d-flex align-items-center flex-column p-4">
         <h3 className="pb-4">Contact Me</h3>
         <div className="w-100">

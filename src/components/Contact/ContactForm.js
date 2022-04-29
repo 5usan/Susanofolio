@@ -16,7 +16,6 @@ const ContactForm = () => {
     description: "",
   };
   const submitHandler = (values, onSubmitProps) => {
-    console.log(console.log(values, "contact form datas"));
     setNotification(true);
     const sentContactInfo = async () => {
       try {

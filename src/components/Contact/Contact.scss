@@ -1,22 +1,21 @@
-$detailsTextColor: white;
-$linkColor: rgb(37, 92, 148);
-$usernameColor: rgb(122, 122, 122);
-
 @import "../../styles/mixin.scss";
+@import "../../styles/variables";
 
 .contact {
-  color: $detailsTextColor;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-weight: lighter;
   overflow: hidden;
+  color: $text--color;
   h3 {
-    font-size: 1rem;
+    font-size: $sub--heading--text--size--mobile;
     margin: 0px;
   }
 
   @include notMobile() {
+    width: 80%;
+    margin: 0 10%;
     h3 {
-      font-size: 1.5rem;
+      font-size: $sub--heading--text--size;
     }
   }
 
@@ -25,13 +24,13 @@ $usernameColor: rgb(122, 122, 122);
   a:active,
   a:hover {
     text-decoration: none;
-    color: $detailsTextColor;
+    color: $text--color;
   }
   h6 {
-    color: $linkColor;
+    color: $link--color;
   }
 
   p {
-    color: $usernameColor;
+    color: $username--color;
   }
 }

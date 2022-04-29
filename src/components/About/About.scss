@@ -1,10 +1,7 @@
-$aboutTextColor: white;
-$specificParaColor: rgb(122, 122, 122);
-$specificFontSize: 0.9rem;
-$firstFontSize: 1rem;
+@import "../../styles//variables";
 
 .about {
-  color: $aboutTextColor;
+  color: $text--color;
   letter-spacing: 1px;
 }
 
@@ -13,14 +10,14 @@ $firstFontSize: 1rem;
 }
 
 .firstPara {
-  font-size: $firstFontSize;
+  font-size: $first-font-size;
   text-align: justify;
   letter-spacing: 3px;
 }
 
 .restPara {
   letter-spacing: 2px;
-  font-size: $specificFontSize;
-  color: $specificParaColor;
+  font-size: $specific-font-size;
+  color: $specific--para--color;
   text-align: justify;
 }

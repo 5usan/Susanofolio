@@ -1,12 +1,8 @@
-$backgroundColor: rgb(34, 34, 34);
-$textColor: white;
-$mobiletextSize: 1.5rem;
-$textSize: 2rem;
-
-@import "../../styles/mixin.scss";
+@import "../../styles/mixin";
+@import "../../styles/variables";
 
 .back {
-  background-color: $backgroundColor;
+  background-color: $background--color;
   padding: 15px;
   min-height: 100vh;
   @include notMobile {
@@ -18,16 +14,15 @@ $textSize: 2rem;
 
 .contain {
   width: 100%;
-  // margin: 0 5%;
   min-height: inherit;
 }
 
 .wrapper {
-  color: $textColor;
+  color: $text--color;
   h4 {
-    font-size: $mobiletextSize;
+    font-size: $mobile--text--size;
     @include notMobile() {
-      font-size: $textSize;
+      font-size: $text--size;
     }
   }
   .portfolio {

@@ -1,8 +1,16 @@
 @import "../../styles/variables";
 @import "../../styles/mixin.scss";
 
-.wrapper{
-    color: $text--color;
-    margin: 0 5%;
-    width: 90%;
+.wrapper {
+  color: $text--color;
+  margin: 0 5%;
+  width: 90%;
+
+  h2 {
+    letter-spacing: 3px;
+    font-size: $sub--heading--text--size--mobile;
+    @include notMobile() {
+      font-size: $sub--heading--text--size;
+    }
+  }
 }
