@@ -3,13 +3,13 @@ This project is created using create react app.\
 This project showcase the portfolio, resume and about section.
 ## Packages Used
 ```
-    #react-dom
-    #react-router-dom
-    #sass
-    #typescript
-    #axios
-    #formik
-    #yup
+    * react-dom
+    * react-router-dom
+    * sass
+    * typescript
+    * axios
+    * formik
+    * yup
 ```
 ## Available Scripts
 In the project directory, you can run:
