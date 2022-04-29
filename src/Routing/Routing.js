@@ -6,6 +6,7 @@ import PortfolioPage from "../pages/PortfolioPage";
 import ContactPage from "../pages/ContactPage";
 import AboutPage from "../pages/AboutPage";
 import ResumePage from "../pages/ResumePage";
+import Footer from "../components/Footer/Footer";
 
 function Routing() {
   return (
@@ -19,6 +20,7 @@ function Routing() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
+      <Footer />
     </>
   );
 }
