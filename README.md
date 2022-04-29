@@ -3,16 +3,19 @@ This project is created using create react app.\
 This project showcase the portfolio, resume and about section.
 ## Packages Used
 ```
-    "react-dom",
-    "react-router-dom",
-    "sass",
-    "typescript",
-    "axios",
-    "formik",
-    "yup"
+    #react-dom
+    #react-router-dom
+    #sass
+    #typescript
+    #axios
+    #formik
+    #yup
 ```
 ## Available Scripts
 In the project directory, you can run:
+
+### `npm install`
+Installs all the dependencies that are required in order to run the web application.
 ### `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
