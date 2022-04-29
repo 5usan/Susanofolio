@@ -14,12 +14,18 @@ const About = () => {
 
   return (
     <div className="row justify-content-center about">
-      <img src={userInfo.image} alt="" className="col-lg-4 col-md-4 aboutImg" />
+      <img
+        src={userInfo.image}
+        alt=""
+        className="col-lg-4 col-md-12 aboutImg"
+      />
 
-      <div className="pt-4 col-lg-4 col-md-4 d-flex flex-column text-justify justify-content-around">
+      <div className="pt-4 col-lg-4 col-md-12 d-flex flex-column text-justify justify-content-around">
         {userInfo.description.map((desc, index) => {
           return (
-            <p className={index === 0 ? "firstPara" : "restPara"}>{desc}</p>
+            <p key={index} className={index === 0 ? "firstPara" : "restPara"}>
+              {desc}
+            </p>
           );
         })}
         <div>

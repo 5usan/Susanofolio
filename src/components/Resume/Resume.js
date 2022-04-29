@@ -9,8 +9,9 @@ const Resume = () => {
       <div className="col-lg-5">
         <div className="d-flex flex-column">
           <h2 className="text-center">Education</h2>
-          {resume.education.map((edu) => (
+          {resume.education.map((edu, index) => (
             <ResumeCard
+              key={index}
               date={edu.completionData}
               name={edu.name}
               instituteName={edu.instituteName}
@@ -30,8 +31,9 @@ const Resume = () => {
       <div className="col-lg-5">
         <div className="d-flex flex-column">
           <h2 className="text-center">Experience</h2>
-          {resume.workExperience.map((exp) => (
+          {resume.workExperience.map((exp, index) => (
             <ResumeCard
+              key={index}
               date={exp.expreienceData}
               name={exp.name}
               instituteName={exp.instituteName}

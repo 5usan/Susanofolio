@@ -31,7 +31,6 @@ const ContactForm = () => {
     sentContactInfo();
     onSubmitProps.resetForm();
   };
-  console.log(notification, "noti");
   return (
     <FormikContainer
       initialValues={initialValues}

@@ -37,7 +37,7 @@ const Portfolio = () => {
           );
         })
       ) : (
-        <h className="text-white text-center">LOADING...</h>
+        <h4 className="text-white text-center">LOADING...</h4>
       )}
     </div>
   );

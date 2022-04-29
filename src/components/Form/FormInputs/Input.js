@@ -33,7 +33,7 @@ const Input = (props) => {
       fullWidth: true,
       variant: "filled",
       multiline: true,
-      rows: rows,
+      minRows: rows,
     };
   } else {
     config = {

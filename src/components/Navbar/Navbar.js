@@ -8,13 +8,10 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const { width } = useWindowDimensions();
   const mobileView = 478;
-  console.log(width);
   const displayNavbar = () => {
     setShowNavbar(!showNavbar);
   };
   const location = useLocation();
-  console.log(location.pathname, "location");
-
   return (
     <div className={location.pathname === "/home" ? "rootNavHome" : "rootNav"}>
       {width < mobileView && (
