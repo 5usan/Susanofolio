@@ -1,4 +1,4 @@
-import Routing from "./Routing/Routing";
+import Routing from "./routing/Routing";
 import "./App.scss";
 
 const App = () => {
