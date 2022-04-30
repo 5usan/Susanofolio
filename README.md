@@ -6,7 +6,7 @@ This project showcase the portfolio, resume and about section.
     * react-dom
     * react-router-dom
     * sass
-    * typescript
+    * react-toastify
     * axios
     * formik
     * yup
