@@ -21,7 +21,7 @@ const ContactForm = () => {
     setNotification(true);
     const sentContactInfo = async () => {
       try {
-        const resp = await axios.post(contactLink, values);
+        await axios.post(contactLink, values);
         toast.success("Message Sent", { autoClose: 2500 });
         setNotification(false);
       } catch (err) {
