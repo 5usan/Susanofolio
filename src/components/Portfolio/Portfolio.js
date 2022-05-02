@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 import projectsInfo from "../../constants/projects.json";
 
 const Portfolio = () => {
-  const userGitLink = "https://susanofolio-backend.herokuapp.com//api/portfolio/";
+  const userGitLink = "https://susanofolio-backend.herokuapp.com/api/portfolio/";
   const [repoInfo, setRepoInfo] = useState(null);
   const sendGetRequest = async () => {
     try {
