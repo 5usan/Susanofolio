@@ -9,7 +9,7 @@ import Button from "../Button/Button";
 import { ValidationContactFormSchema } from "../Form/FormValidation/ValidationSchema";
 
 const ContactForm = () => {
-  const contactLink = "http://localhost:5000/api/contact/";
+  const contactLink = "https://susanofolio-backend.herokuapp.com/api/contact/";
   const [notification, setNotification] = useState(false);
   const initialValues = {
     firstName: "",
