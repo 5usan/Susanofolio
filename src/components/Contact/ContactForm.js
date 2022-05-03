@@ -6,10 +6,11 @@ import "react-toastify/dist/ReactToastify.css";
 import FormikContainer from "../Form/Formik/FormikContainer";
 import FormikControls from "../Form/Formik/FormikControls";
 import Button from "../Button/Button";
+import { mainHost, contact } from "../../config/config";
 import { ValidationContactFormSchema } from "../Form/FormValidation/ValidationSchema";
 
 const ContactForm = () => {
-  const contactLink = "https://susanofolio-backend.herokuapp.com/api/contact/";
+  const contactLink = mainHost + contact;
   const [notification, setNotification] = useState(false);
   const initialValues = {
     firstName: "",

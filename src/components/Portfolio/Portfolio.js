@@ -1,11 +1,11 @@
-// import { Button } from "@material-ui/core";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import projectsInfo from "../../constants/projects.json";
+import { mainHost, portfolio } from "../../config/config";
 
 const Portfolio = () => {
-  const userGitLink = "https://susanofolio-backend.herokuapp.com/api/portfolio/";
+  const userGitLink = mainHost + portfolio;
   const [repoInfo, setRepoInfo] = useState(null);
   const sendGetRequest = async () => {
     try {
@@ -17,7 +17,7 @@ const Portfolio = () => {
   };
   useEffect(() => {
     sendGetRequest();
-  }, []);
+  });
 
   return (
     <div className="row justify-content-center align-items-center">
