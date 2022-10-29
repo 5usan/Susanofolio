@@ -19,6 +19,7 @@
 
 .wrapper {
   color: $text--color;
+  padding-bottom: 50px;
   h4 {
     font-size: $mobile--text--size;
     @include notMobile() {
