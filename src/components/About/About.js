@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./About.scss";
 import userInfo from "../../constants/user-info.json";
 import Button from "../Button/Button";
+import "./About.scss";
 
 const About = () => {
   const navigate = useNavigate();
@@ -30,7 +30,15 @@ const About = () => {
         })}
         <div>
           <Button onClick={clickHandler}>Hire Me</Button>
-          <Button className="mx-2 bg-secondary">Download CV</Button>
+          <Button className="mx-2 bg-secondary">
+            <a href={userInfo.resume}
+             className="download"
+             target="_blank"
+             rel="noreferrer"
+            >
+              Download CV
+            </a>
+          </Button>
         </div>
       </div>
     </div>
